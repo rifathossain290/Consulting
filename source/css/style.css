@@ -1,0 +1,276 @@
+
+
+
+
+
+
+
+/* Basic styles */
+/* ------------------------------ google font ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+a {
+    transition: all .3s ease 0s;
+}
+a:hover {
+    color: none;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fix {
+    overflow: hidden;
+}
+.custom-btn {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    background: #1F87E4;
+    padding: 1.125rem 3.125rem;
+    text-transform: uppercase;
+}
+.custom-btn:hover {
+    background: #fff;
+    color: #1F87E4;
+}
+/* Basic styles end */
+
+
+/* --------------------------------- header --------------------------------- */
+
+/* header contact */
+.header-contact {
+    background: #4A657D;
+    min-height: 3.125rem;
+}
+.contact-wrapper i {
+    color: #fff;
+    font-size: 0.75rem;
+    margin-right: 0.813rem;
+}
+.contact-wrapper span {
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: 700;
+}
+.cellphone {
+    padding-right: 1rem;
+    margin-right: 1rem;
+    position: relative;
+}
+.cellphone::before {
+    position: absolute;
+    content: "";
+    width: 0.063rem;
+    height: 0.875rem;
+    background: #8194A4;
+    top: 0.313rem;
+    right: 0;
+}
+
+.social-icon {
+    position: relative;
+}
+.social-icon::before {
+    position: absolute;
+    content: "";
+    width: 0.063rem;
+    height: 0.875rem;
+    background: #8194A4;
+    top: 0.313rem;
+    right: 0;
+}
+.social-icon i {
+    font-size: 0.75rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.support {
+    padding: 0 1rem;
+}
+.support i {
+    color: #fff;
+    font-size: 0.75rem;
+    margin-right: 0.813rem;
+}
+.support span {
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: 700;
+}
+.header-contact .custom-btn {
+    padding: 1.125rem 2.5rem;
+}
+
+
+
+/* main header */
+.header-main {
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
+}
+.header-wrapper {
+    min-height: 6.25rem;
+}
+.menu li {
+    margin-left: 2.5rem;
+}
+.menu li a {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4A657D;
+    padding-bottom: 0.6rem;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0.2rem;
+    background: #4A657D;
+    transition: all .3s ease 0s;
+}
+.menu li a:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+
+
+/* ------------------------------ slider start ------------------------------ */
+
+/* slider 1 */
+.slider-1 {
+    background: url(../img/slider/slider1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+/* slider 2 */
+.slider-2 {
+    background: url(../img/slider/slider2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+.slider-2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.4);
+}
+/* slider 3 */
+.slider-3 {
+    background: url(../img/slider/slider3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+.slider-3::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.4);
+}
+
+
+.slider-wrapper {
+    position: relative;
+    z-index: 9;
+}
+.slider-wrapper h2 {
+    color: #4A657D;
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.slider-wrapper p {
+    color: #768899;
+    font-size: 0.875rem;
+    margin-top: 1.56rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.slider-wrapper a {
+    font-size: 0.875rem;
+    color: #fff;
+    background: #1F87E4;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1.87rem;
+}
+
+/* slider icon positioning */
+.slider-active {
+    position: relative;
+}
+.slider-active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4.37rem;
+    height: 3.75rem;
+    text-align: center;
+    background: rgba(31, 135, 228,1);
+    color: #fff;
+    line-height: 3.75rem;
+    z-index: 3;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    overflow: hidden;
+}
+.slider-active .slick-arrow.ti-arrow-right {
+    right: 0;
+    left: auto;
+}
+.slider-active .slick-arrow:hover {
+    background: url(../img/slider/bg-slider.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11.25rem;
+}
+.slider-active .slick-arrow:hover.hover-none {
+    color: transparent;
+}
+.slider-active .slick-arrow:hover .arrow-right-align {
+    color: #fff;
+    margin-left: 0.6rem;
+}
+.slider-active span.arrow-text {
+    color: #1D1D1D;
+    padding-left: 10px;
+    font-weight: 700;
+    display: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .3s ease 0s;
+}
+.slider-active .slick-arrow:hover span.arrow-text {
+    display: inline-block;
+}
