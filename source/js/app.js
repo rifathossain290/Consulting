@@ -7,7 +7,7 @@ $('.slider-active').slick({
     infinite: true,
     arrows: true,
     prevArrow: '<span class="ti-arrow-left"><span class="arrow-text">Previous Slider</span></span>',
-    nextArrow: '<span class="ti-arrow-right hover-none"><span class="arrow-text next-slide">Next Slider<span        class="ti-arrow-right arrow-right-align"></span></span></span>',
+    nextArrow: '<span class="ti-arrow-right hover-none"><span class="arrow-text next-slide">Next Slider<span class="ti-arrow-right arrow-right-align"></span></span></span>',
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -41,6 +41,37 @@ $('.slider-active').slick({
     ]
 });
 
+
+
+// service active
+$('.service-active').slick({
+  centerMode: true,
+  centerPadding: '0',
+  slidesToShow: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 
 

@@ -35,6 +35,7 @@ ul {
 .fix {
     overflow: hidden;
 }
+/* custom btn */
 .custom-btn {
     font-size: 0.875rem;
     font-weight: 700;
@@ -49,6 +50,26 @@ ul {
     color: #1F87E4;
     box-shadow: 0 25px 35px 0 rgba(0,0,0,0.1);
 }
+
+/* section title */
+.section-title {
+    padding: 0 17rem;
+    margin-bottom: 3rem;
+}
+.section-title h4 {
+    color: #4A657D;
+    font-size: 1.31rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.section-title p {
+    color: #4A657D;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+}
+
+
 .pt-100 {
     padding-top: 6.25rem;
 }
@@ -64,6 +85,9 @@ ul {
 .header-contact {
     background: #4A657D;
     min-height: 3.125rem;
+}
+.contact-wrapper {
+    height: 100%;
 }
 .contact-wrapper i {
     color: #fff;
@@ -315,5 +339,55 @@ ul {
     margin-top: 1rem;
 }
 .help-info .custom-btn {
-    margin-top: 2.5rem;
+    margin-top: 2.2rem;
+}
+
+
+/* ------------------------------ service area ------------------------------ */
+
+
+.single-service {
+    background: #EDEFF2;
+    padding: 4.37rem 2.5rem;
+}
+.service-icon img {
+    display: inline-block;
+}
+.single-service h4 {
+    color: #4A657D;
+    font-size: 0.87rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.25rem 0;
+}
+.single-service p {
+    font-size: 0.87rem;
+    color: #4A657D;
+    line-height: 1.5rem;
+}
+
+.single-service .custom-btn {
+    padding: 1rem 1.5rem;
+    margin-top: 0.5rem;
+}
+.single-service {
+    transform: scale(0.9);
+    transition: all .3s ease 0s;
+}
+
+/* slick center */
+.single-service.slick-center {
+    transform: scale(1.1);
+    background: #1f87e4;
+}
+.single-service.slick-center h4 {
+    color: #fff;
+}
+.single-service.slick-center p {
+    color: #fff;
+}
+.single-service.slick-center .custom-btn {
+    background: #fff;
+    color: #1f87e4;
 }
