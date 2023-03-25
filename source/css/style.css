@@ -42,10 +42,18 @@ ul {
     background: #1F87E4;
     padding: 1.125rem 3.125rem;
     text-transform: uppercase;
+    display: inline-block;
 }
 .custom-btn:hover {
     background: #fff;
     color: #1F87E4;
+    box-shadow: 0 25px 35px 0 rgba(0,0,0,0.1);
+}
+.pt-100 {
+    padding-top: 6.25rem;
+}
+.pb-100 {
+    padding-bottom: 6.25rem;
 }
 /* Basic styles end */
 
@@ -273,4 +281,39 @@ ul {
 }
 .slider-active .slick-arrow:hover span.arrow-text {
     display: inline-block;
+}
+
+
+/* ------------------------------ helping area ------------------------------ */
+.helping-img {
+    position: relative;
+    left: -120px;
+    top: 0px;
+}
+.helping-img img {
+    width: 100%;
+}
+.help-info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.help-info h3 {
+    color: #4A657D;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.help-info span {
+    color: #1F87E4;
+}
+.help-info p {
+    color: #4A657D;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.help-info .custom-btn {
+    margin-top: 2.5rem;
 }
