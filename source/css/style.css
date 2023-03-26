@@ -396,3 +396,61 @@ ul {
 .single-service.slick-center .service-icon i {
     color: #ffffff;
 }
+
+
+/* ----------------------------- Practise area ----------------------------- */
+
+
+.practise-img img {
+    width: 100%;
+}
+.practise-wrapper h4 a {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1F87E4;
+    margin-top: 1.2rem;
+    display: inline-block;
+}
+.practise-wrapper p {
+    color: #4A657D;
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------ Counter area ------------------------------ */
+
+.counter-area {
+    background: url(../img/counter-bg/counter1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.counter-area .section-title h4 {
+    color: #fff;
+}
+.counter-area .section-title p {
+    color: #fff;
+}
+
+.counter-wrapper span {
+    display: block;
+    color: #fff;
+}
+.counter-wrapper span.count-span {
+    font-size: 3.37rem;
+    font-weight: 700;
+    margin-bottom: 1.56rem;
+}
+.counter-wrapper span {
+    display: block;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
