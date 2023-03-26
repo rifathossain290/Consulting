@@ -424,7 +424,7 @@ ul {
 /* ------------------------------ Counter area ------------------------------ */
 
 .counter-area {
-    background: url(../img/counter-bg/counter1.jpg);
+    background: url(../img/bg/counter1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -453,4 +453,129 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+/* ----------------------------- Portfolio area ----------------------------- */
+
+.showcase-items {
+    position: relative;
+}
+.showcase-wrapper {
+    position: absolute;
+    top: 7.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.container-custom {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.showcase-items {
+    position: relative;
+}
+.showcase-bg {
+    background: url(../img/portfolio/portfolio-showcase/showcase-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 35rem;
+}
+.portfolio-menu .working-btn {
+    color: #fff;
+    margin: 0 1.56rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.portfolio-img img {
+    width: 100%;
+}
+
+.working-btn.active {
+    color: #1f87e4;
+}
+
+
+
+/* ----------------------------- Portfolio team ----------------------------- */
+.team-img img {
+    width: 100%;
+}
+
+.team-info {
+    margin-top: 1.25rem;
+}
+.team-info span {
+    display: block;
+}
+span.member-name {
+    color: #4A657D;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+span.member-duty {
+    color: #1F87E4;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin: 0.6rem 0 1.15rem;
+}
+
+.team-info p {
+    color: #4A657D;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+span.member-contact {
+    font-size: 0.875rem;
+    color: #4A657D;
+}
+
+
+/* ---------------------------- Testimonial start --------------------------- */
+
+.testimonial-area {
+    background: url(../img/bg/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonial-area .section-title h4 {
+    color: #fff;
+}
+.testimonial-area .section-title p {
+    color: #fff;
+}
+
+
+/* testimonial content */
+.testim-img {
+    display: inline-block;
+}
+
+.testim-img img {
+    border-radius: 50%;
+    border: 5px solid #1F87E4;
+}
+
+.img-title {
+    display: block;
+    color: #fff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin: 1.375rem 0;
 }

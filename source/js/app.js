@@ -48,8 +48,8 @@
     centerMode: true,
     centerPadding: '0',
     slidesToShow: 3,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: false,
     responsive: [
       {
@@ -78,6 +78,29 @@
   $('.counter').counterUp({
     delay: 10,
     time: 1700
+  });
+
+  // portfolio isotope
+  let $grid = $('.portfolio-active').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      // use outer width of grid-sizer for columnWidth
+      columnWidth: 1
+    }
+  })
+
+  // filter items on button click
+  $('.portfolio-menu').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+  //for menu active class
+  $('.portfolio-menu button').on('click', function(event) {
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass('active');
+    event.preventDefault();
   });
 
 
