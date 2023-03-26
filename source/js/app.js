@@ -48,7 +48,7 @@ $('.service-active').slick({
   centerMode: true,
   centerPadding: '0',
   slidesToShow: 3,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   arrows: false,
   responsive: [

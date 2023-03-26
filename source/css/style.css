@@ -348,10 +348,11 @@ ul {
 
 .single-service {
     background: #EDEFF2;
-    padding: 4.37rem 2.5rem;
+    padding: 4.37rem 2.68rem;
 }
-.service-icon img {
-    display: inline-block;
+.service-icon i {
+    font-size: 35px;
+    color: #4A657D;
 }
 .single-service h4 {
     color: #4A657D;
@@ -360,6 +361,7 @@ ul {
     line-height: 1.5rem;
     text-transform: uppercase;
     margin: 1.25rem 0;
+    padding: 0 1.5rem;
 }
 .single-service p {
     font-size: 0.87rem;
@@ -373,7 +375,7 @@ ul {
 }
 .single-service {
     transform: scale(0.9);
-    transition: all .3s ease 0s;
+    transition: all .7s ease-out 0s;
 }
 
 /* slick center */
@@ -390,4 +392,7 @@ ul {
 .single-service.slick-center .custom-btn {
     background: #fff;
     color: #1f87e4;
+}
+.single-service.slick-center .service-icon i {
+    color: #ffffff;
 }
