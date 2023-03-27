@@ -114,6 +114,10 @@ ul {
     right: 0;
 }
 
+.social-contact {
+    justify-content: flex-end;
+}
+
 .social-icon {
     position: relative;
 }
@@ -447,12 +451,13 @@ ul {
     margin-bottom: 1.56rem;
 }
 .counter-wrapper span {
-    display: block;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+	display: block;
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1rem;
 }
 
 
@@ -711,11 +716,13 @@ a.more-photos:hover {
 
 /* copyright area */
 .copyright-area {
-    border-top: 1px solid #575C60;
     background: #0E151B;
+}
+.copyright-wrapper {
+    border-top: 1px solid #575C60;
     padding: 1.5rem 0;
 }
-.copyright-area p {
+.copyright-wrapper p {
     margin: 0;
     font-size: 0.875rem;
     color: #fff;

@@ -1,0 +1,96 @@
+/* XL Device :1200px. */
+/* @media (min-width: 1200px) and (max-width: 1500px) {
+
+
+} */
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* slider area */
+    .slider-wrapper h2 {
+        font-size: 2.125rem;
+    }
+    /* help area */
+    .helping-img {
+        left: 0;
+    }
+    /* footer area */
+    .footer-widget form button {
+        right: -9px;
+    }
+
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* header top */
+    .contact-wrapper {
+        justify-content: center;
+        padding: 0.938rem;
+    }
+    .social-contact {
+        justify-content: center;
+    }
+
+    /* help area */
+    .helping-img {
+        left: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    /* section title */
+    .section-title {
+        padding: 0 5rem;
+    }
+
+
+    /* service area */
+    .service-area .single-service {
+        padding: 4.37rem 0;
+    }
+    /* practise-wrapper */
+    .practise-wrapper h4 a {
+        line-height: 1.2rem;
+    }
+
+    /* counter area */
+    .counter-wrapper span.count-span {
+        font-size: 3rem;
+    }
+    /* portfolio area */
+    .showcase-bg {
+        min-height: 28rem;
+    }
+    /* portfolio team area */
+    .team-img {
+        margin-top: 2rem;
+    }
+    /* testimonial area */
+    .single-testimonial {
+        margin-left: 3rem;
+    }
+    .testim-text p {
+        padding-right: 2rem;
+    }
+    /* footer area */
+    .footer-title {
+        margin-top: 3rem;
+    }
+
+
+
+
+}
+
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
