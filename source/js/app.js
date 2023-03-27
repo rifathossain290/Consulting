@@ -49,7 +49,7 @@
     centerPadding: '0',
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1500,
     arrows: false,
     responsive: [
       {
@@ -77,7 +77,7 @@
   // counter up
   $('.counter').counterUp({
     delay: 10,
-    time: 1700
+    time: 1200
   });
 
   // portfolio isotope
@@ -147,7 +147,28 @@
 
 
 
+  // mobile menu activation
+  let openMenu = document.querySelector('.open-menu'),
+  closeMenu = document.querySelector('.close-menu'),
+  _menu = document.querySelector('.menu');
 
+  openMenu.addEventListener('click', function(){
+    closeMenu.style.display = 'block';
+    openMenu.style.display = 'none';
+    _menu.style.opacity = 1;
+    _menu.style.visibility = 'visible';
+    _menu.style.height = 50 + 'vh';
+    _menu.style.transition = 'all .3s ease 0s';
+  });
+
+  closeMenu.addEventListener('click', function(){
+    openMenu.style.display = 'block';
+    closeMenu.style.display = 'none';
+    _menu.style.opacity = 0;
+    _menu.style.visibility = 'hidden';
+    _menu.style.height = 0 + 'vh';
+    _menu.style.transition = 'all .3s ease 0s';
+  })
 
 
 

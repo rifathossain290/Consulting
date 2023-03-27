@@ -14,6 +14,7 @@
     .helping-img {
         left: 0;
     }
+    
     /* footer area */
     .footer-widget form button {
         right: -9px;
@@ -33,6 +34,21 @@
         justify-content: center;
     }
 
+    /* slider area */
+    .slider-wrapper {
+        padding: 0 9rem;
+    }
+    .single-slider {
+        min-height: 60vh;
+    }
+    .slider-active .slick-arrow {
+        top: 23%;
+    }
+    .slider-wrapper h2 {
+        font-size: 2.125rem;
+    }
+
+
     /* help area */
     .helping-img {
         left: 0;
@@ -49,7 +65,11 @@
     .service-area .single-service {
         padding: 4.37rem 0;
     }
-    /* practise-wrapper */
+    
+    /* practise area */
+    .practise-wrapper {
+        margin-top: 2.5rem;
+    }
     .practise-wrapper h4 a {
         line-height: 1.2rem;
     }
@@ -74,6 +94,9 @@
         padding-right: 2rem;
     }
     /* footer area */
+    .footer-widget form button {
+        right: 19.375rem;
+    }
     .footer-title {
         margin-top: 3rem;
     }
@@ -86,6 +109,69 @@
  
 /* Extra small Device. */
 @media (max-width: 767px) {
+    /* header area */
+    .header-contact {
+        display: none;
+    }
+
+    .header-main .container {
+        max-width: 100%;
+    }
+    .header-wrapper {
+        padding: 0 2rem;
+    }
+    .menu-icons {
+        display: flex;
+    }
+    .menu-icons i {
+        font-size: 1.5rem;
+        color: #4A657D;
+        cursor: pointer;
+        transition: all .2s ease 0s;
+    }
+    .close-menu {
+        display: none;
+    }
+    .menu-icons .open-menu:hover {
+        transform: rotate(180deg);
+        transform: scale(1.3);
+    }
+    .menu-icons .close-menu:hover {
+        transform: rotate(180deg);
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 0vh;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease 0s;
+    }
+    .menu li {
+        margin-left: 0;
+    }
+    .menu li a {
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
  
 }

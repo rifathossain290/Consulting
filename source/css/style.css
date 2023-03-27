@@ -85,9 +85,11 @@ ul {
 .header-contact {
     background: #4A657D;
     min-height: 3.125rem;
+    display: flex;
+    align-items: center;
 }
 .contact-wrapper {
-    height: 100%;
+    padding: 1rem 0;
 }
 .contact-wrapper i {
     color: #fff;
@@ -158,6 +160,8 @@ ul {
 /* main header */
 .header-main {
     box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 9;
 }
 .header-wrapper {
     min-height: 6.25rem;
@@ -190,8 +194,17 @@ ul {
 }
 
 
+/* menu icons */
+.menu-icons {
+    display: none;
+}
+
 
 /* ------------------------------ slider start ------------------------------ */
+
+.single-slider {
+    min-height: 100vh;
+}
 
 /* slider 1 */
 .slider-1 {
@@ -199,7 +212,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
 }
 /* slider 2 */
 .slider-2 {
@@ -207,7 +219,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
     position: relative;
 }
 .slider-2::before {
@@ -223,7 +234,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
     position: relative;
 }
 .slider-3::before {
