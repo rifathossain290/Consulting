@@ -81,6 +81,14 @@ ul {
 
 /* --------------------------------- header --------------------------------- */
 
+
+/* header */
+header {
+    background: #fff;
+    position: relative;
+    z-index: 9;
+}
+
 /* header contact */
 .header-contact {
     background: #4A657D;
@@ -158,10 +166,25 @@ ul {
 
 
 /* main header */
+
+/* sticky menu */
+.header-main.sticky.scroll-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	z-index: 9;
+    transition: all .2s linear 0s;
+}
+.header-main.sticky.scroll-header .header-wrapper {
+    min-height: 4.5rem;
+}
+/* sticky menu end */
+
+
 .header-main {
-    box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 9;
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.3);
 }
 .header-wrapper {
     min-height: 6.25rem;
@@ -199,6 +222,14 @@ ul {
     display: none;
 }
 
+/* -------------------- main tag design for fixed footer -------------------- */
+
+main {
+    position: relative;
+    z-index: 7;
+    background: #fff;
+    margin-bottom: 36.063rem;
+}
 
 /* ------------------------------ slider start ------------------------------ */
 
@@ -615,9 +646,20 @@ span.member-contact {
 
 /* ------------------------------ Footer start ------------------------------ */
 
+/* start sticky style */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+/* end sticky style */
+
 
 .footer-top {
     background: #0E151B;
+    background-attachment: fixed;
     padding: 3.75rem 0;
 }
 
@@ -667,18 +709,26 @@ span.followers span {
     color: #0E151B;
 }
 .footer-widget form button {
-    position: absolute;
-    right: 66px;
-    top: 0;
-    bottom: 0;
-    padding: 1rem 2.375rem;
-    border: none;
-    outline: none;
-    font-size: 0.875rem;
-    background: #1F87E4;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
+	position: absolute;
+	right: 66px;
+	top: 0;
+	bottom: 0;
+	padding: 1rem 2.375rem;
+	border: none;
+	outline: none;
+	font-size: 0.875rem;
+	background: #1F87E4;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all .3s ease 0s;
+}
+
+.footer-widget form button:hover {
+	background: #fff;
+	color: #1F87E4;
+	box-shadow: 0 0 35px 0 rgba(0,0,0,0.5);
 }
 
 /* footer title */
@@ -727,6 +777,7 @@ a.more-photos:hover {
 /* copyright area */
 .copyright-area {
     background: #0E151B;
+    background-attachment: fixed;
 }
 .copyright-wrapper {
     border-top: 1px solid #575C60;
@@ -736,4 +787,27 @@ a.more-photos:hover {
     margin: 0;
     font-size: 0.875rem;
     color: #fff;
+}
+
+/* scroll up */
+#scrollUp {
+	position: absolute;
+	bottom: 2rem;
+	right: 1rem;
+	background: #1F87E4;
+    color: #fff;
+    font-size: 1.3rem;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	border-radius: 50%;
+    transition: all .3s ease 0s;
+}
+
+#scrollUp:hover {
+    background: #fff;
+    color: #1F87E4;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,0.3);
+    transform: rotate(360deg);
 }
