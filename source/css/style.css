@@ -51,6 +51,8 @@ ul {
     box-shadow: 0 25px 35px 0 rgba(0,0,0,0.1);
 }
 
+
+
 /* section title */
 .section-title {
     padding: 0 17rem;
@@ -214,6 +216,12 @@ header {
     width: 100%;
     right: auto;
     left: 0;
+}
+.menu li a.active {
+    border-bottom: 2px solid #4A657D;
+}
+.menu li a:hover.active {
+    border-bottom: none;
 }
 
 
@@ -821,5 +829,88 @@ a.more-photos:hover {
     background: #fff;
     color: #1F87E4;
     box-shadow: 0 0 35px 0 rgba(0,0,0,0.3);
-    transform: rotateY(-180deg);
+    transform: scale(1.2);
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                home page end                               */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------- page.html start ---------------------------- */
+
+
+
+.business-img img {
+    width: 100%;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+}
+.business-img img:hover {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 2;
+}
+.page-wrapper h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1F87E4;
+    margin-top: 1.2rem;
+}
+.page-wrapper p {
+    color: #4A657D;
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+    text-align: justify;
+}
+.single-page {
+    margin-top: 2rem;
+}
+
+
+/* --------------------------- Contact.html start --------------------------- */
+.contact-form input {
+	width: 100%;
+	margin-bottom: 2rem;
+	border: 2px solid #4A657D;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color: #4A657D;
+	outline: none;
+}
+.contact-form .text-field {
+	width: 100%;
+	height: 15rem;
+    outline: none;
+	border: 2px solid #4A657D;
+    color: #4A657D;
+	border-radius: 0.5rem;
+	resize: none;
+    padding: 1rem;
+    font-style: italic;
+}
+.submit-btn {
+    color: #4A657D;
+	outline: none;
+	padding: 1.2rem 5rem;
+	border: 2px solid #4A657D;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: #fff;
+	margin-top: 3rem;
+	cursor: pointer;
+	transition: all .3s ease 0s;
+}
+.submit-btn:hover {
+    background: #4A657D;
+    color: #fff;
 }
