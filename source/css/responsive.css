@@ -10,6 +10,9 @@
     .slider-wrapper h2 {
         font-size: 2.125rem;
     }
+    .single-slider {
+        min-height: 60vh;
+    }
     /* help area */
     .helping-img {
         left: 0;
@@ -20,6 +23,20 @@
     .footer-widget form button {
         right: -9px;
     }
+
+    /* sticky footer */
+    main {
+        margin-bottom: 0;
+    }
+    footer {
+        position: relative;
+    }
+    /* sticky footer end */
+
+
+
+
+
 
 }
 
@@ -43,7 +60,7 @@
         min-height: 60vh;
     }
     .slider-active .slick-arrow {
-        top: 23%;
+        top: 42%;
     }
     .slider-wrapper h2 {
         font-size: 2.125rem;
@@ -105,6 +122,18 @@
     .footer-title {
         margin-top: 3rem;
     }
+
+    /* for sticky footer */
+    main {
+        margin-bottom: 0;
+    }
+    footer {
+        position: relative;
+    }
+    /* sticky footer end */
+
+
+
 
 
 
@@ -223,6 +252,17 @@
     }
 
     /* footer area */
+
+    /* for sticky footer */
+    main {
+        margin-bottom: 0;
+    }
+    footer {
+        position: relative;
+    }
+    /* sticky footer end */
+
+
     .footer-widget form button {
         right: 35px;
     }
