@@ -13,6 +13,7 @@
 
 
 
+
   // mobile menu activation
   let openMenu = document.querySelector('.open-menu'),
   closeMenu = document.querySelector('.close-menu'),
